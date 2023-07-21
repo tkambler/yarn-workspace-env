@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Foo } from 'shared-react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import HomepageFeature from 'homepage-feature';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    Component: HomepageFeature,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <div>Hello, world.</div>
-    <Foo />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
