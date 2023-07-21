@@ -1,0 +1,25 @@
+{
+  "name": "dashboard",
+  "packageManager": "yarn@3.2.1",
+  "prettier": "prettier-config",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx",
+    "lint:nibble": "eslint-nibble src --ext ts,tsx",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "eslint": "^8.45.0",
+    "prettier-config": "workspace:^",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "shared-react": "workspace:^",
+    "tsconfig": "workspace:^",
+    "vite": "^4.4.6",
+    "vite-tsconfig-paths": "^4.2.0"
+  }
+}

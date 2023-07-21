@@ -1,0 +1,11 @@
+{
+  "name": "yarn-env",
+  "packageManager": "yarn@3.2.1",
+  "private": true,
+  "workspaces": [
+    ".yarn/plugins/@custom/*",
+    "apps/*",
+    "features/*",
+    "packages/*"
+  ]
+}

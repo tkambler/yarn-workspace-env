@@ -1,0 +1,17 @@
+{
+  "name": "shared-react",
+  "packageManager": "yarn@3.2.1",
+  "prettier": "prettier-config",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "eslint src --ext ts,tsx",
+    "lint:nibble": "eslint-nibble src --ext ts,tsx"
+  },
+  "dependencies": {
+    "@types/react": "^18.2.0",
+    "eslint": "^8.45.0",
+    "prettier-config": "workspace:^",
+    "react": "^18.2.0",
+    "tsconfig": "workspace:^"
+  }
+}

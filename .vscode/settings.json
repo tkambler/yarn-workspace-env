@@ -1,0 +1,19 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.associations": {
+    ".pages": "yaml"
+  },
+  /**
+   * @see https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+   */
+  "eslint.debug": true,
+  "eslint.workingDirectories": [{ "mode": "auto" }]
+  /**
+   * With this setting, we can instruct VSCode's internal TypeScript functionality to use the version of TypeScript that
+   * we've installed in the project, rather than the one that it ships with by default. I'm not entirely sure if this is
+   * a good idea or not. Would like to look into this some more.
+   
+   * "typescript.tsdk": "node_modules/typescript/lib"
+   */
+}

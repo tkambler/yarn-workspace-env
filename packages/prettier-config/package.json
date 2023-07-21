@@ -1,0 +1,5 @@
+{
+  "name": "prettier-config",
+  "packageManager": "yarn@3.2.1",
+  "main": "prettier-config.js"
+}
