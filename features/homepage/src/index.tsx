@@ -1,7 +1,9 @@
-import React from "react";
+import { HomepageFeature } from './Homepage';
+export { default as reducer } from './slice';
 
-const HomepageFeature = () => {
-  return <div>This is the homepage.</div>;
-};
-
-export default HomepageFeature;
+export const featureRoutes = [
+  {
+    path: '/',
+    Component: HomepageFeature,
+  },
+];
