@@ -3,14 +3,16 @@ import type { PayloadAction } from '@reduxjs/toolkit';
 
 interface FeatureState {
   value: number;
+  loading: boolean;
 }
 
 const initialState: FeatureState = {
   value: 0,
+  loading: true,
 };
 
 export const counterSlice = createSlice({
-  name: 'homepage',
+  name: 'settings',
   initialState,
   reducers: {
     increment: (state) => {

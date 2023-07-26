@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { reducer as homepageReducer } from 'homepage-feature';
-
-console.log('hp', homepageReducer);
+import { reducer as settingsReducer } from 'settings-feature';
 
 export const store = configureStore({
   reducer: {
     homepage: homepageReducer,
+    settings: settingsReducer,
   },
 });
 

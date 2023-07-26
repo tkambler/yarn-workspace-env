@@ -546,6 +546,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash@npm:^4.14.196":
+  version: 4.14.196
+  resolution: "@types/lodash@npm:4.14.196"
+  checksum: 201d17c3e62ae02a93c99ec78e024b2be9bd75564dd8fd8c26f6ac51a985ab280d28ce2688c3bcdfe785b0991cd9814edff19ee000234c7b45d9a697f09feb6a
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:^20.4.2":
   version: 20.4.4
   resolution: "@types/node@npm:20.4.4"
@@ -1147,15 +1154,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "dashboard@workspace:apps/dashboard"
   dependencies:
+    "@reduxjs/toolkit": ^1.9.5
+    "@types/lodash": ^4.14.196
     "@types/react": ^18.2.0
     "@types/react-dom": ^18.2.0
     "@vitejs/plugin-react-swc": ^3.3.2
     eslint: ^8.45.0
     homepage-feature: "workspace:^"
+    lodash: ^4.17.21
     prettier-config: "workspace:^"
     react: ^18.2.0
     react-dom: ^18.2.0
     react-router-dom: ^6.14.2
+    settings-feature: "workspace:^"
     shared-react: "workspace:^"
     tsconfig: "workspace:^"
     vite: ^4.4.6
@@ -2661,6 +2672,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash@npm:^4.17.21":
+  version: 4.17.21
+  resolution: "lodash@npm:4.17.21"
+  checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
+  languageName: node
+  linkType: hard
+
 "loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
@@ -3627,6 +3645,21 @@ __metadata:
   checksum: 6e65a05f7cf7ebdf8b7c75b101e18c0b7e3dff4940d480efed8aad3a36a4005140b660fa1d804cb8bce911cac290441dc728084a30504d3516ac2ff7ad607b02
   languageName: node
   linkType: hard
+
+"settings-feature@workspace:^, settings-feature@workspace:features/settings":
+  version: 0.0.0-use.local
+  resolution: "settings-feature@workspace:features/settings"
+  dependencies:
+    "@reduxjs/toolkit": ^1.9.5
+    "@types/react": ^18.2.15
+    eslint-config-custom: "workspace:^"
+    prettier-config: "workspace:^"
+    react: ^18.2.0
+    react-redux: ^8.1.1
+    react-router-dom: ^6.14.2
+    tsconfig: "workspace:^"
+  languageName: unknown
+  linkType: soft
 
 "shared-react@workspace:^, shared-react@workspace:packages/shared-react":
   version: 0.0.0-use.local
